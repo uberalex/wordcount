@@ -1,0 +1,5 @@
+body {
+    background-color: rgba(149, 165, 166,1.0);
+    color: rgba(44, 62, 80,1.0);
+    font-family: "Exo", sans-serif;
+}
