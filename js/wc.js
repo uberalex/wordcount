@@ -1,6 +1,6 @@
 var TextBox = React.createClass({
     getInitialState: function() {
-        return {value: 'Hello!'};
+        return {value: ''};
     },
     handleChange: function(event) {
         this.setState({value: event.target.value});
@@ -12,13 +12,20 @@ var TextBox = React.createClass({
             return words.match(/[^\s]+/g).length;
         };
         return (
-            <div className="statbox">
-            <textarea
-            value={this.state.value}
-            onChange={this.handleChange}
-            />
-            <p>Character count: {this.state.value.length}</p>
-            <p>Word count: {countWords(this.state.value)}</p> 
+            <div className="color ui equal width grid">
+                <div className="row">
+                <div className="column">
+                    <textarea value={this.state.value} onChange={this.handleChange} />
+                </div> 
+                </div>
+                <div className="row">
+                <div className="column">
+                    <div className="ui segment"><p>Character count: {this.state.value.length}</p></div>
+                    </div>
+                <div className="column">
+                    <div className="ui segment"><p>Word count: {countWords(this.state.value)}</p></div>
+                    </div>
+                </div>
             </div>
         );
     }

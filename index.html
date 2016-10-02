@@ -1,17 +1,27 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Word Count</title>
-    <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
-    <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
-    <script src="https://unpkg.com/babel-core@5.8.38/browser.min.js"></script>
-    <script src="https://unpkg.com/jquery@3.1.0/dist/jquery.min.js"></script>
-    <script src="https://unpkg.com/remarkable@1.6.2/dist/remarkable.min.js"></script>
-  </head>
-  <body>
-    <div id="content"></div>
-    <script type="text/babel" src="js/wc.js"></script>
-  </body>
+<head>
+<meta charset="utf-8" />
+<title>Word Count</title>
+<script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+<script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+<script src="https://unpkg.com/babel-core@5.8.38/browser.min.js"></script>
+<script src="https://unpkg.com/remarkable@1.6.2/dist/remarkable.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="ui text container first">
+      <h1 class="ui dividing header">Word Count</h1>
+  </div>
+
+<div id="content" class="ui container centered page grid"></div>
+
+<script type="text/babel" src="js/wc.js"></script>
+
+
+</body>
 </html>
